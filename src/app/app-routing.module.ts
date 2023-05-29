@@ -11,25 +11,25 @@ import { VerPaisComponent } from "./pais/pages/ver-pais/ver-pais.component";
 
 const routes : Routes = [
     {
-        path: "",
+        path: "paises",
         component: PorPaisComponent,
         pathMatch:"full"        
     },
     {
-        path: "region",
+        path: "paises/region",
         component: PorRegionComponent,        
     },
     {
-        path: "capital",
+        path: "paises/capital",
         component: PorCapitalComponent,        
     },
     {
-        path: "pais/:id",
+        path: "paises/pais/:id",
         component: VerPaisComponent,        
     },
     {
         path: "**",
-        redirectTo: "",        
+        redirectTo: "paises",        
     }
 ]
 
